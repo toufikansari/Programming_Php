@@ -166,6 +166,72 @@ $read = fread($file , filesize("data.txt"));
 echo $read;
 fclose($file);
 
+echo"<h4> Read File</h4>";
+$file = fopen("data.txt",'w');
+$write = fwrite($file , "Helo Aatif how are you");
+echo $write;
+$file = fopen("data.txt",'r');
+$read = fread($file , filesize("data.txt"));
+echo $read;
+fclose($file);
+
+echo"<h4> Sort technoque</h4>";
+echo"<p> Assending</p>";
+$arr = array(50,25,40,63);
+sort($arr);
+print_r($arr);
+
+echo"<p> dessending</p>";
+$arr = array(10,25,40,63);
+rsort($arr);
+print_r($arr);
+
+echo"<p> Assendin of assocated array</p>";
+$arr = array("A"=>10,"B"=>25,"C"=>40,"D"=>63);
+asort($arr);
+print_r($arr);
+
+echo"<p> deassendin of assocated array</p>";
+$arr = array("A"=>10,"B"=>25,"C"=>40,"D"=>63);
+arsort($arr);
+print_r($arr);
+
+echo"<p> Assendin of assocated array Acc to key</p>";
+$arr = array("A"=>10,"D"=>25,"B"=>40,"C"=>63);
+ksort($arr);
+print_r($arr);
+
+echo"<p> dessendin of assocated array Acc to key</p>";
+$arr = array("A"=>10,"D"=>25,"B"=>40,"C"=>63);
+krsort($arr);
+print_r($arr);
+echo"<br>";
+echo"<h4>Matemematical operation in php</h4>";
+echo"<br>";
+echo "Return Positive Number(-10)=:".abs(-10);
+echo"<br>";
+echo "Retutn the squre root 25=". sqrt(25);
+echo"<br>";
+echo"Return the power of number 2^3=" .pow(2 ,3);
+echo"<br>";
+echo"round a number of next integer 4.8=". ceil(4.8);
+echo"<br>";
+echo"round a num down the nearest int 4.5=" .floor(4.5);
+echo"<br>";
+echo"round a number the nearest int7.8=" . round(7.8);
+echo"<br>";
+$arr = array(10,25,40,63);
+echo "array(10,25,40,63)=" .max($arr);
+echo"<br>";
+echo "array(10,25,40,63)=" .min($arr);
+echo"<br>";
+echo"Genrete value 1-100=". rand(1,100);
+echo"<br>";
+echo"Return the remender of 10 / 3".fmod(10,3);
+echo"<br>";
+echo"Value of pi=".pi();
+echo"<br>";
+echo"Log of 10 =".log(10);
 
 ?>
 
