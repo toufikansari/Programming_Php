@@ -256,6 +256,25 @@ echo "Welcome". $_SESSION['username'];
 session_destroy();
 echo"<h2> Session Destroy </h2>";
 echo "Welcome". $_SESSION['username'];
+
+// OOps concept in php
+//1. inheritance
+class Animal{
+    public function eat(){
+        echo "<h3>Animal Is Eting</h3>";
+    }
+}
+class Dog extends Animal{
+    public function bark(){
+        echo"<h3>Dog is brking</h3>";
+    }
+}
+
+$obj = new Dog();
+$obj -> eat();
+echo "<br>";
+$obj -> bark();
+
 ?>
 
 
