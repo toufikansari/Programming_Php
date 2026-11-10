@@ -233,6 +233,29 @@ echo"Value of pi=".pi();
 echo"<br>";
 echo"Log of 10 =".log(10);
 
+date_default_timezone_set("Asia/Kolkata");
+
+$time = date('H');
+echo"<br>";
+if ($time < 12) {
+    echo
+    "Good Morning";
+    echo"<br>";
+}elseif ($time <17) {
+    echo "Good Afternoon";
+    echo"<br>";
+}else {
+    echo"<h2>Good Evening</h2>";
+    echo"<br>";
+}
+
+session_start();
+$_SESSION['username'] = "Aatif";
+echo "<h2> Session Start </h2>";
+echo "Welcome". $_SESSION['username'];
+session_destroy();
+echo"<h2> Session Destroy </h2>";
+echo "Welcome". $_SESSION['username'];
 ?>
 
 
