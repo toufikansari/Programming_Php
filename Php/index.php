@@ -270,7 +270,7 @@ class Dog extends Animal{
     }
 }
 
-$obj = new Dog();
+$obj = new Dog();   
 $obj -> eat();
 echo "<br>";
 $obj -> bark();
